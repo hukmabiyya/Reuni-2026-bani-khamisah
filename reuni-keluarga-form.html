@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendataan Panitia Reuni Keluarga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pendataan Panitia Reuni Keluarga</h1>
+    <p>Mohon isi data berikut agar kita bisa saling mengenal dan mudah didata.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" name="Nama Lengkap" id="nama" required>
+
+      <label for="cucu">Cucu keberapa dari Kakek siapa</label>
+      <input type="text" name="Cucu dari Kakek" id="cucu" required>
+
+      <label for="anak">Anak dari siapa</label>
+      <input type="text" name="Anak dari" id="anak" required>
+
+      <label for="kelas">Kelas berapa / kerja dimana</label>
+      <input type="text" name="Kelas atau Pekerjaan" id="kelas" required>
+
+      <label for="sekolah">Sekolah dimana (jika masih sekolah)</label>
+      <input type="text" name="Sekolah" id="sekolah">
+
+      <label for="domisili">Domisili saat ini</label>
+      <input type="text" name="Domisili" id="domisili" required>
+
+      <label for="instagram">Instagram (opsional)</label>
+      <input type="text" name="Instagram" id="instagram">
+
+      <button type="submit">Kirim Data</button>
+    </form>
+  </div>
+</body>
+</html>
